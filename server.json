@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.jackculpan/card-links",
+  "title": "Card Links — Credit Card Data",
+  "description": "Live credit card data for US, UK, AU, and EU markets. 82 cards, 9 tools.",
+  "repository": {
+    "url": "https://github.com/jackculpan/card-links-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.milesandpointsdaily.com/mcp"
+    }
+  ]
+}

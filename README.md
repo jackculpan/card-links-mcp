@@ -6,7 +6,7 @@ A remote MCP server that gives any Claude client live credit card data — welco
 
 **Claude.ai** (Max/Team/Enterprise): Settings → Integrations → Add more → paste:
 ```
-https://mcp.cardforagent.com/mcp
+https://mcp.milesandpointsdaily.com/mcp
 ```
 
 **Claude Desktop** (`claude_desktop_config.json`):
@@ -14,7 +14,7 @@ https://mcp.cardforagent.com/mcp
 {
   "mcpServers": {
     "card-links": {
-      "url": "https://mcp.cardforagent.com/mcp"
+      "url": "https://mcp.milesandpointsdaily.com/mcp"
     }
   }
 }
@@ -57,7 +57,7 @@ Amex Gold/Platinum · Barclaycard Avios Plus/Avios · HSBC Premier World Elite �
 
 Add `?ref=<your-id>` to the MCP URL to surface your affiliate apply links in every tool response:
 ```
-https://mcp.cardforagent.com/mcp?ref=youraffiliatehandle
+https://mcp.milesandpointsdaily.com/mcp?ref=youraffiliatehandle
 ```
 
 Register at `POST /affiliates/register` to get your ID and API key, then upload your card links at `PUT /affiliates/links`.
@@ -72,10 +72,6 @@ Register at `POST /affiliates/register` to get your ID and API key, then upload 
 | GET | `/changes` | REST: recent changes |
 | GET | `/transfer-partners` | REST: transfer programs |
 | GET | `/health` | Health check |
-
-## Data freshness
-
-Card data is scraped weekly from official issuer pages (Mondays). The scraper uses Firecrawl when available, falling back to Claude with web search. Changes are tracked and webhook-deliverable.
 
 ## License
 
