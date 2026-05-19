@@ -1,8 +1,10 @@
 # Card Links MCP
 
-A remote MCP server that gives any Claude client live credit card data — welcome bonuses, earn rates, annual fees, benefit credits, and transfer partners — across **US, UK, AU, and EU** markets.
+A remote MCP server that gives Claude and ChatGPT live credit card data — welcome bonuses, earn rates, annual fees, benefit credits, and transfer partners — across **US, UK, AU, and EU** markets.
 
-## Add to Claude
+## Add to Claude or ChatGPT
+
+Both Claude and ChatGPT support MCP natively. One URL works across both.
 
 **Claude.ai** (Max/Team/Enterprise): Settings → Integrations → Add more → paste:
 ```
@@ -19,6 +21,8 @@ https://mcp.milesandpointsdaily.com/mcp
   }
 }
 ```
+
+**ChatGPT**: Settings → Integrations → Connect apps → Add custom → paste the same URL.
 
 **Smithery / other MCP clients**: search for `card-links` or use the URL above.
 
